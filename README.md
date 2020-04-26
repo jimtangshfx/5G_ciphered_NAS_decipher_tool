@@ -17,7 +17,7 @@ So I come up with this idea to write a python program to decipher the 5G NAS pay
   
   b.	NAS ciphering with EEA1(snow3G)/EEA2(AES)/EEA3(ZUC)
 # Current limitation:
-      Support 5G AKA authentication only, no EAP-AKA’ support.
+  Support 5G AKA authentication only, no EAP-AKA’ support.
 # Environment/Versions
   wireshark 3.0+ on windows 7/10.
 
