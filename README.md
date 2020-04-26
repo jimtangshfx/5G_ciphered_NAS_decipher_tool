@@ -1,5 +1,6 @@
 # 5G_ciphered_NAS_decipher_tool
-  A python tool to decipher/decrypt 5G ciphered NAS message and export plain 5G NAS into wireshark pcap file
+ ## A python tool to decipher/decrypt 5G ciphered NAS payload and export plain 5G NAS payload back into wireshark pcap file
+ 
   During my work in 5G testing and troubleshooting, I have been seeing many cases that 5G NAS message captured in wireshark are ciphered by AES,snow3G, or ZUC, and the SUCI in registration request could also be ciphered by profileA/profileB defined in 3gPP 33.501.
 So I come up with this idea to write a python program to decipher the 5G NAS payload retrieved from pcap file, then write the plain NAS payload back into the pcap file. By that, we can browse and check the deciphered NAS details by wireshark very easily.
 # Python dependencies of this tool:
