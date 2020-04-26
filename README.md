@@ -36,7 +36,7 @@ So I come up with this idea to write a python program to decipher the 5G NAS pay
   
   ![5G AKA authentication procedure defined by 33.501](/images/AKA.png)
   
-  An alternative way to derive KAMF and KNASenc key is to capture the message between AUSF and SEAF, then derive the Kseaf from message, by that, we can eventually derive the KAMF & KNASenc without having to get the secret key and OP value,as usually secret key and OP are quite confidential and won't be exposed to outside user. This tool currently support deriving the encryption key based on secret key and OP only, as it's supposed to use for internal testing so it's shouldn't be a problem to get secret key and OP, it may support derive encription key based on Kseaf capture between AUSF and SEAF(AMF).
+  An alternative way to derive KAMF and KNASenc key is to capture the message between AUSF and SEAF, then derive the Kseaf from message, by that, we can eventually derive the KAMF & KNASenc without having to get the secret key and OP value,as usually secret key and OP are quite confidential and won't be exposed to outside user. This tool currently support deriving the encryption key based on secret key and OP only, as it's supposed to be used for internal testing so it's shouldn't be a problem to get secret key and OP, it may support later the derivation of encription key based on Kseaf captured between AUSF and SEAF(AMF).
   
   With the encryption key derived, we can decrypt the NAS payload based on below scheme of ciphering-data defined in 33.401 Annex B.
    ![ciphering-data](/images/ciphering-data.png)
