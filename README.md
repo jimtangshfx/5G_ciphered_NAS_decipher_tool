@@ -14,6 +14,7 @@ So I come up with this idea to write a python program to decipher the 5G NAS pay
 
 # Supported ciphering algorithm:
   a.	SUCI encryption based on profile A(curve 22519)  or profile B( EC secp256r1)
+  
   b.	NAS ciphering with EEA1(snow3G)/EEA2(AES)/EEA3(ZUC)
 # Current limitation:
       Support 5G AKA authentication only, no EAP-AKA’ support.
