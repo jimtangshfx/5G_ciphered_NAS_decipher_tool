@@ -23,7 +23,9 @@ So I come up with this idea to write a python program to decipher the 5G NAS pay
 
 # Prerequisite:
   a.	Your pcap need to contain the registration request or identity response message from UEs so that the tool could retrieve the SUPI from that, the pcap need to contain authentication request message as well so that the tool could retrieve the CK/IK based on the rand value during authentication procedure.
+  
   b.	Running on windows 7/10 only.
+  
   c.	Wireshark 3.0 or above installed on the computer on which this tool is running, as tshark of wireshark is needed to read the pcap file. Old wireshark(lower than 3.0) may not decode new 5G nas message well.
   
  
