@@ -4,8 +4,11 @@
 So I come up with this idea to write a python program to decipher the 5G NAS payload retrieved from pcap file, then write the plain NAS payload back into the pcap file. By that, we can browse and check the deciphered NAS details by wireshark very easily.
 # Python dependencies of this tool:
   pyshark: https://github.com/KimiNewt/pyshark/ Python wrapper for tshark, allowing python packet parsing using wireshark dissectors
+  
   pycryptodome: https://github.com/Legrandin/pycryptodome a self-contained Python package of low-level cryptographic primitives
+  
   cryptography: https://github.com/pyca/cryptography a package which provides cryptographic recipes and primitives to Python developers
+  
   CryptoMobile: https://github.com/mitshell/CryptoMobile python wrappers around 3G and LTE encryption and integrity protection   algorithms 
 
 
