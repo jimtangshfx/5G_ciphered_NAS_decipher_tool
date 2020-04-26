@@ -23,6 +23,7 @@ So I come up with this idea to write a python program to decipher the 5G NAS pay
   wireshark 3.0+ on windows 7/10.
 # The basic idea of how to decipher the 5G NAS message:
   3GPP TS 33.501 Annex C defines Elliptic Curve Integrated Encryption Scheme (ECIES) to conceal the Subscription Permanent Identifier(SUPI) in registration request. The encrption of ECIES profileA or profileB is based on below diagram, so if we have the private key of home network, and retreive the Eph. public key of UE in regisration request message from pcap file,then we can compute the Eph. shared key based on the private key of home network and Eph. public key of UE. With the Eph. shared key computed, we can derive Eph. decription key to decrypt the SUCI and get the plain text based SUPI.
+  
   Encryption of SUPI based on ECIES:
   ![Encryption based on ECIES at UE](/images/ECIES.png)
   
