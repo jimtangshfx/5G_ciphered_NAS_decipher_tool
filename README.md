@@ -20,7 +20,8 @@ So I come up with this idea to write a python program to decipher the 5G NAS pay
   Support 5G AKA authentication only, no EAP-AKA’ support.
 # Environment/Versions
   wireshark 3.0+ on windows 7/10.
-
+# how this tool works:
+  ![Encryption based on ECIES at UE](/images/decipher1.png)
 # Prerequisite:
   a.	Your pcap need to contain the registration request or identity response message from UEs so that the tool could retrieve the SUPI from that, the pcap need to contain authentication request message as well so that the tool could retrieve the CK/IK based on the rand value during authentication procedure.
   
