@@ -22,3 +22,4 @@ So I come up with this idea to write a python program to decipher the 5G NAS pay
   b.	Running on windows 7/10 only.
   c.	Wireshark 3.0 or above installed on the computer on which this tool is running, as tshark of wireshark is needed to read the pcap file. Old wireshark(lower than 3.0) may not decode new 5G nas message well.
   
+ 
