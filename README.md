@@ -26,10 +26,10 @@ So I come up with this idea to write a python program to decipher the 5G NAS pay
   ![Encryption based on ECIES at UE](/images/ECIES.png)
   
   Further more, after getting SUPI,if we have the secret key of UE and OP(or OPc) of network,we can retrieve the RAND/MAC/RES value from authentication request in pcap file, then compute the CK/IK based on Milenage algorithm(3GPP 35.205/35.206) on our own. With the CK/IK and below key derivation scheme defined in 3GPP 33.501, we can eventually derive the KAMF and the subsquent KNASenc key to decipher the NAS payload.
-  Key derivation scheme defined by 33.501
+  Key derivation scheme defined by 33.501, based on which we could compute the Eph. shared key and encryption key for SUCI decryption.
   
   ![Key derivation scheme defined by 33.501](/images/key-derivation.png)
-  5G AKA authentication procedure defined by 33.501
+  5G AKA authentication procedure defined by 33.501, from which we could retrieve the RAND value and compute CK/IK and eventually get the encryption key of NAS to decrypt NAS payload.
   
   ![5G AKA authentication procedure defined by 33.501](/images/AKA.png)
   
