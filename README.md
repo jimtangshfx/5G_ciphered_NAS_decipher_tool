@@ -35,7 +35,7 @@ So I come up with this idea to write a python program to decipher the 5G NAS pay
   
   An alternative way to derive KAMF and KNASenc key is to capture the message between AUSF and SEAF, then derive the Kseaf from message, by that, we can eventually derive the KAMF & KNASenc without having to get the secret key and OP value,as usually secret key and OP are quite confidential and won't be exposed to outside user. This tool currently support deriving the encryption key based on secret key and OP only, as it's supposed to use for internal testing so it's shouldn't be a problem to get secret key and OP, it may support derive encription key based on Kseaf capture between AUSF and SEAF(AMF).
   
-# Prerequisite:
+# Prerequisite needed to make this tool work:
   a.	Your pcap need to contain the registration request or identity response message from UEs so that the tool could retrieve the SUPI from that, the pcap need to contain authentication request message as well so that the tool could retrieve the CK/IK based on the rand value during authentication procedure.
   
   b.	Running on windows 7/10 only.
